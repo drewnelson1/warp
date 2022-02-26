@@ -59,7 +59,7 @@ docker exec -it qinglong bash
 ### 安装warp
 
 ```
-curl -fsSL git.io/wireguard-go.sh | bash && apk add wireguard-tools curl && wget https://github.com/ViRb3/wgcf/releases/download/v2.2.11/wgcf_2.2.11_linux_amd64 && mv wgcf_2.2.11_linux_amd64 wgcf && chmod +x wgcf && yes | ./wgcf register && ./wgcf generate && mv wgcf-profile.conf /etc/wireguard/wg0.conf && wg-quick up wg0 && curl cip.cc
+curl -fsSL git.io/wireguard-go.sh | bash && apk add wireguard-tools curl openrc && wget https://github.com/ViRb3/wgcf/releases/download/v2.2.11/wgcf_2.2.11_linux_amd64 && mv wgcf_2.2.11_linux_amd64 wgcf && chmod +x wgcf && yes | ./wgcf register && ./wgcf generate && mv wgcf-profile.conf /etc/wireguard/wg0.conf && wg-quick up wg0 && curl cip.cc
 ```
 
 可选择修复依赖，请到
