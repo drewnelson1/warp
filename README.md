@@ -74,7 +74,7 @@ https://thin-hill-428.notion.site/QL-pannel-Dependent-Librai-164400378c7f4a4587f
 
 定时规则：33 */1 * * *
 
-### 在青龙面板添加更换ip的启动，目前没能解决随系统自启wireguard的问题，只能每2分钟执行一次启动wireguard
+### 目前没能解决随系统自启wireguard的问题，只能每2分钟执行一次启动wireguard
 
 名称：启动wireguard
 
