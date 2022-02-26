@@ -35,23 +35,7 @@ docker run -dit \
 
 ### 或者安装faker的docker的青龙2.9.3稳定版--仅之前使用faker一键脚本安装亲测稳定青龙版本的人使用
 
-```
-docker run -dit \
-  -v $PWD/ql/config:/ql/config \
-  -v $PWD/ql/log:/ql/log \
-  -v $PWD/ql/db:/ql/db \
-  -v $PWD/ql/repo:/ql/repo \
-  -v $PWD/ql/raw:/ql/raw \
-  -v $PWD/ql/scripts:/ql/scripts \
-  -p 5700:5700 \
-  --name qinglong \
-  --hostname qinglong \
-  --restart always \
-  --privileged \
-  --sysctl net.ipv6.conf.all.disable_ipv6=0 \
-  --cap-add net_admin \
-  shufflewzc/qinglong:latest
-```
+
 
 请注意映射目录与你之前使用的映射目录是否一致，否则会导致青龙的配置（包括脚本库、定时任务等）不正确
 
