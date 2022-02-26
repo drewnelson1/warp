@@ -73,3 +73,11 @@ https://thin-hill-428.notion.site/QL-pannel-Dependent-Librai-164400378c7f4a4587f
 命令：task wg-quick down wg0 && wg-quick up wg0 && curl cip.cc
 
 定时规则：33 */1 * * *
+
+### 在青龙面板添加更换ip的启动，目前没能解决随系统自启wireguard的问题，只能每2分钟执行一次启动wireguard
+
+名称：启动wireguard
+
+命令：task wg-quick up wg0 && curl cip.cc
+
+定时规则：*/2 * * * *
