@@ -16,7 +16,7 @@ docker stop qinglong && docker rm qinglong
 
 在安装时选择映射正确的目录，删除原有的青龙不影响青龙的配置（包括脚本库、定时任务等），但可能会影响依赖，可重装后修复依赖
 
-### 安装青龙官方版
+### 例如安装青龙官方版
 
 ```
 docker run -dit \
