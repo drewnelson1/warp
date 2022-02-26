@@ -78,6 +78,6 @@ https://thin-hill-428.notion.site/QL-pannel-Dependent-Librai-164400378c7f4a4587f
 
 名称：启动wireguard
 
-命令：task wg-quick up wg0 && curl cip.cc
+命令：task wg-quick up wg0
 
 定时规则：*/2 * * * *
